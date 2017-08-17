@@ -23,12 +23,6 @@ urlpatterns = [
     url(r'', include('blog.urls')),
 ]
 
-import os
-
-print(settings.STATIC_ROOT)
-print(os.listdir(settings.STATIC_ROOT))
-print(settings.MEDIA_ROOT)
-print(os.listdir(settings.MEDIA_ROOT))
 
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

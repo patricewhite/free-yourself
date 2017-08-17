@@ -21,5 +21,11 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
+print(settings.STATIC_ROOT)
+print(os.listdir(settings.STATIC_ROOT))
+print(settings.MEDIA_ROOT)
+print(os.listdir(settings.MEDIA_ROOT))
+
+
 urlpatterns += static(STATIC_URL, document_root=STATIC_ROOT)
 urlpatterns += static(MEDIA_URL, document_root=MEDIA_ROOT)
