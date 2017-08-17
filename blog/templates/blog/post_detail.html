@@ -10,6 +10,10 @@
         {% if post.image %}
             <img src="{{ post.image.url }}">
         {% endif %}
+        {% if post.audio_file %}
+            <audio  src="{{ post.audio_file.url }}" controls>
+            </audio>
+        {% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
         {% if post.published_date %}
             <div class="date">
