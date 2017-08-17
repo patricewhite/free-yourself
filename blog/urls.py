@@ -13,19 +13,17 @@ urlpatterns = [
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-print(STATIC_ROOT)
-print(os.listdir(STATIC_ROOT))
+
 print(MEDIA_ROOT)
 print(os.listdir(MEDIA_ROOT))
+print(os.listdir(MEDIA_ROOT+'/music'))
+print(os.listdir(MEDIA_ROOT+'/images'))
 
-
-urlpatterns += static(STATIC_URL, document_root=STATIC_ROOT)
 urlpatterns += static(MEDIA_URL, document_root=MEDIA_ROOT)
