@@ -1,5 +1,5 @@
 # Free Yourself
-This is a blog page I created while learning Python and Django. With this blog you cab create text, video, and audio post. You can add, delete and update post as well as get all the post you have created. I created this blog page because I have been wanting to start blogging but not wanting to put my thoughts on my social media platforms, so I thought why not make my own blog for me.
+This is a blog page I created while learning Python and Django. With this blog you can create text, video, and audio post. You can add, delete and update posts as well as get all the post you have created. I created this blog page because I have been wanting to start blogging but not wanting to put my thoughts on my social media platforms, so I thought why not make my own blog for me.
 
 ## Technology Used
 **FrontEnd**: CSS, HTML, Python <br/>
@@ -67,6 +67,8 @@ to start the development server
 $ python manage.py runserver
 ```
 open `127.0.0.1:8000/` on your browser to view app
+
+It is also deployed here: https://free-yourself.herokuapp.com/
 
 ## ScreenShots
 ### All Post
