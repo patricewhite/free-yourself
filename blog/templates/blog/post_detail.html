@@ -2,10 +2,6 @@
 
 {% block content %}
     <div class="post">
-      {% if user.is_authenticated %}
-          <a href="{% url 'post_edit' pk=post.pk %}"><button class="edit btn">EDIT</button></a>
-          <a href="{% url 'post_remove' pk=post.pk %}"><button class="delete btn">DELETE</button></a>
-      {% endif %}
         <h1>{{ post.title }}</h1>
         {% if post.image %}
             <img src="{{ post.image.url }}">
@@ -19,6 +15,10 @@
             <div class="date">
                 {{ post.published_date }}
             </div>
+        {% endif %}
+        {% if user.is_authenticated %}
+            <a href="{% url 'post_edit' pk=post.pk %}"><button class="btn">EDIT</button></a>
+            <a href="{% url 'post_remove' pk=post.pk %}"><button class="btn">DELETE</button></a>
         {% endif %}
     </div>
 {% endblock %}
