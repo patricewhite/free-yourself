@@ -31,6 +31,7 @@ add secrets.sh to .gitignore file
 
 create a postgres db and add the credentials to settings.py
 
+```python
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -41,6 +42,7 @@ DATABASES = {
         'PORT': '',
     }
 }
+```
 
 then run
 ```sh
