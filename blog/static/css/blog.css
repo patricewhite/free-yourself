@@ -36,17 +36,49 @@ h1, h2, h3, h4 {
 
 .save {
     float: right;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #5ADBFF;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.save:hover {
+  background-color: #296474;
+}
+
+.save:active {
+  background-color: #296474;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.post-form{
+  margin-right: 20px;
 }
 
 .post-form textarea, .post-form input {
     width: 100%;
+    padding: 12px 20px;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
+.top-menu {
+  text-decoration: none;
+  color: white;
+  float: right;
+  font-size: 26pt;
+  margin-right: 20px;
+  border: 5px solid #094074;
+}
+
+.top-menu:hover {
+  color: #094074;
 }
 
 .post {
@@ -58,7 +90,9 @@ h1, h2, h3, h4 {
 }
 
 .btn {
+  float: right;
   padding: 15px 32px;
+  background-color: #5ADBFF; 
 }
 
 .title, .published{
@@ -73,4 +107,8 @@ h1, h2, h3, h4 {
 .img, .music {
   display:block;
   margin:auto;
+}
+
+.new.btn{
+  background-color: red;
 }

@@ -131,21 +131,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-
-# STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-
-# Media files
-# MEDIA_URL = 'http://%s.s3.amazonaws.com/' % python-blog-assets + '/media'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-#
-# AWS_ACCESS_KEY_ID = 'AKIAIWBCR54N4QE2N47Q'
-# AWS_SECRET_ACCESS_KEY = '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'
-# AWS_STORAGE_BUCKET_NAME = 'python-blog-assets'
-#
-# STATIC_URL = 'http://s3.amazonaws.com/' % python-blog-assets + '/static'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
