@@ -3,17 +3,17 @@
 {% block content %}
     {% for post in posts %}
         <div class="post">
-            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <h1 class="title"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             {% if post.image %}
-                <img src="{{ post.image.url }}">
+                <img class="img"src="{{ post.image.url }}">
             {% endif %}
             {% if post.audio_file %}
-            <audio  src="{{ post.audio_file.url }}" controls>
+            <audio  class="music" src="{{ post.audio_file.url }}" controls>
             </audio>
             {% endif %}
-            <p>{{ post.text|linebreaksbr }}</p>
+            <p class="text">{{ post.text|linebreaksbr }}</p>
             <div class="date">
-                <p>published: {{ post.published_date }}</p>
+                <p class="published">published: {{ post.published_date }}</p>
             </div>
         </div>
     {% endfor %}
