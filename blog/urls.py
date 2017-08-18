@@ -10,20 +10,3 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
     url(r'^post/(?P<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
 ]
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
-
-# Media files
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-
-
-print(MEDIA_ROOT)
-print(os.listdir(MEDIA_ROOT))
-print(os.listdir(MEDIA_ROOT+'/music'))
-print(os.listdir(MEDIA_ROOT+'/images'))
-
-urlpatterns += static(MEDIA_URL, document_root=MEDIA_ROOT)
